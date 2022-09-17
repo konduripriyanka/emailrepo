@@ -1,0 +1,4 @@
+1.declaring array with 5 email ids.
+2.ask user to enter mail id
+3.iterating over a loop for validating email.
+4.use if condition for validating email.

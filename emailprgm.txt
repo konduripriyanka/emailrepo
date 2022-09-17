@@ -1,0 +1,33 @@
+import java.util.*;
+public class Emailv {
+
+	public static void main(String[] args) {
+		ArrayList<String> arrl=new ArrayList<String>();
+		
+		arrl.add("abe@gmail.com");
+		arrl.add("123@gmail.com");
+		arrl.add("pinky@gmail.com");
+		arrl.add("abcde@gmail.com");
+		arrl.add("fghi@gmail.com");
+		System.out.println("enter ur mail id:");
+		
+		Scanner sc=new Scanner(System.in);
+		String email=sc.nextLine();
+     
+		boolean flag=false;
+		Iterator<String> itr=arrl.iterator();
+		while(itr.hasNext()) {
+			String n=itr.next();
+			if(email.equals(n)) {
+				flag=true;
+				System.out.println("email id is valid");
+			email=sc.nextLine();
+			return;
+		}
+	}
+	  if(flag==false) {
+		  System.out.println("email id is invalid");
+		  email=sc.nextLine();
+	  }
+}
+}
